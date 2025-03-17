@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Navbar container */
+        .navbar {
+            overflow: hidden;
+            background-color: skyblue;
+            font-family: Arial;
+        }
+
+        /* Links inside the navbar */
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* The Destionation container */
+        .Destionation {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Destionation button */
+        .Destionation .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit; /* Important for vertical align on mobile phones */
+            margin: 0; /* Important for vertical align on mobile phones */
+        }
+
+        /* Add a red background color to navbar links on hover */
+        .navbar a:hover, .Destionation:hover .dropbtn {
+            background-color: red;
+        }
+
+        /* Destionation content (hidden by default) */
+        .Destionation-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the Destionation */
+        .Destionation-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* Add a grey background color to Destionation links on hover */
+        .Destionation-content a:hover {
+            background-color: skyblue;
+        }
+
+        /* Show the Destionation menu on hover */
+        .Destionation:hover .Destionation-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Welcome to Bikini Bottom!</h1>
+        <a href="#home">Home</a>
+        <div class="Destionation">
+          <button class="dropbtn">Destionation
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="Destionation-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <a href="#Author">Author</a>
+    </div>
+</body>
+</html>
